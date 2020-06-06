@@ -16,6 +16,7 @@ end
 
 def valid_phone_number?(phone)
   puts phone
+  puts !!phone.match(/[(]*[0-9]{3}[ )-]*[0-9]{3}[-]*[0-9]{4}\b/)
   phone.each do |num|
     puts num
     if !!num.match(/[(]*[0-9]{3}[ )-]*[0-9]{3}[-]*[0-9]{4}\b/)
